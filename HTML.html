@@ -1,0 +1,36 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Form</title>
+</head>
+<body>
+
+  <h2>MY Form</h2>
+
+  <form action="/submit" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" required><br><br>
+    <label for="time">Preferred Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+   <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      const email = document.getElementById("email").value;
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Invalid email address. Please enter a valid one.");
+        event.preventDefault(); 
+      }
+    });
+  </script>
+
+
+</body>
+</html>
