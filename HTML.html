@@ -22,8 +22,6 @@
    <script>
     document.getElementById("myForm").addEventListener("submit", function(event) {
       const email = document.getElementById("email").value;
-      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
       if (!emailPattern.test(email)) {
         alert("Invalid email address. Please enter a valid one.");
         event.preventDefault(); 
