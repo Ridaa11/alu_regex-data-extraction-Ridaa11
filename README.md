@@ -1,1 +1,1 @@
-This is my HTML form that collects the users Email,Phone,URL and a preffered time. It also includes java script that will help to detect an invalid Email and gemerate an error message
+This is a privacy text scanner That allows you to enter your text including your personal email,phone number and credit card number and You press the scan button and be abble to detect the issues found before you can share the text.
